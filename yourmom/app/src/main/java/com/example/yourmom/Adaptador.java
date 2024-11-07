@@ -17,11 +17,10 @@ public class Adaptador extends BaseAdapter {
     LayoutInflater inflater;
 
     public Adaptador(Context contexto, String[] listaDeporte,
-                     String[] listaComentador, int[] listaImagenes) {
+                     String[] listaComentador) {
         this.contexto = contexto;
         this.listaDeporte = listaDeporte;
         this.listaComentador = listaComentador;
-        this.listaImagenes = listaImagenes;
         this.inflater = LayoutInflater.from(contexto);
     }
 
@@ -51,7 +50,7 @@ public class Adaptador extends BaseAdapter {
         
         textView1.setText(listaDeporte[position]);
         textView2.setText(listaComentador[position]);
-        imageView.setImageResource(listaImagenes[position]);
+        //imageView.setImageResource(listaImagenes[position]);
 
         return convertView;
     }

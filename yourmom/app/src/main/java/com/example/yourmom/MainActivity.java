@@ -25,10 +25,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             "DAY","so","do","your","best","uwu",
     };
 
+    /*
     int imagenes[] = {
             R.drawable.belle_chiquito, R.drawable.slepy_belle,
             R.drawable.maurice
     };
+
+     */
 
     ListView listView;
 
@@ -42,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         listView.setOnItemClickListener(this);
 
         Adaptador adaptador = new Adaptador(getApplicationContext(),
-                deportesComenta, deportesLista, imagenes);
+                deportesComenta, deportesLista);
 
         listView.setAdapter(adaptador);
 
